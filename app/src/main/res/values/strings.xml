@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyCounter</string>
+    <string name="txt_tap">Tap</string>
+</resources>
