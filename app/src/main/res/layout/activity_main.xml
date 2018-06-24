@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/btn_counter"
-        android:layout_width="@dimen/dimen_100dp"
-        android:layout_height="@dimen/dimen_100dp"
+        android:layout_width="@dimen/dimen_120dp"
+        android:layout_height="@dimen/dimen_120dp"
         android:text="@string/txt_tap"
         android:background="@drawable/circuler_ripple_selector"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,6 +26,6 @@
         app:layout_constraintBottom_toTopOf="@id/btn_counter"
         app:layout_constraintLeft_toLeftOf="@id/btn_counter"
         android:layout_margin="@dimen/dimen_8dp"
-        android:text="Hello World!"
+        android:text="@string/txt_your_score"
         />
 </android.support.constraint.ConstraintLayout>

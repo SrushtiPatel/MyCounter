@@ -2,5 +2,6 @@
 <resources>
     <dimen name="circle_border_width">24dp</dimen>
     <dimen name="dimen_100dp">100dp</dimen>
+    <dimen name="dimen_120dp">120dp</dimen>
     <dimen name="dimen_8dp">8dp</dimen>
 </resources>

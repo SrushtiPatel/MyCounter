@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
     android:shape="oval">
     <corners android:radius="180dp" />
-    <solid android:color="@color/colorAccent" />
+            <solid android:color="@color/circle_border" />
     <!--<stroke android:color="@color/colorPrimaryDark" android:width="20dp" />-->
-</shape>
+            <padding
+                android:bottom="@dimen/circle_border_width"
+                android:left="@dimen/circle_border_width"
+                android:right="@dimen/circle_border_width"
+                android:top="@dimen/circle_border_width" />
+
+        </shape>
+
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="180dp" />
+            <solid android:color="@color/circle_main" />
+            <gradient />
+        </shape>
+    </item>
+</layer-list>

@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 26
@@ -19,10 +21,21 @@ android {
 ext{
     supportLibraryVersion = '26.0.2'
 }
+
+kapt {
+    generateStubs = true
+}
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+//    implementation 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    kapt "com.jakewharton:butterknife-compiler:8.8.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

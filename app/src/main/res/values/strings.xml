@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MyCounter</string>
     <string name="txt_tap">Tap</string>
+    <string name="txt_your_score">Your Score: %s</string>
 </resources>
