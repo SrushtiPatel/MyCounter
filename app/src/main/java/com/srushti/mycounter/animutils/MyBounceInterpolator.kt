@@ -1,4 +1,4 @@
-package com.srushti.mycounter
+package com.srushti.mycounter.animutils
 
 class MyBounceInterpolator internal constructor(amplitude: Double, frequency: Double) : android.view.animation.Interpolator {
     private var mAmplitude = 1.0
